@@ -1,5 +1,6 @@
 #include "Header.h"
 #include<iostream>
+#include <conio.h>
 using namespace std;
 int l17()
 {
@@ -18,8 +19,11 @@ int l17()
 		y = rand() % 6 * 7 - 18;
 		cout << "(" << x << ";" << y << ")" << endl;
 	}
-
-	return 0;
+	int code;
+	cout << "Если хотите вернуться в меню, нажмите ПРОБЕЛ";
+	code = _getch();
+	if (code == 32) { main(); }
+	else return 0;
 }
 int l5()
 {
@@ -53,6 +57,10 @@ int l5()
 	else {
 		cout << "Не пересекаются" << endl;
 	}
-
-	return 0;
+	int code;
+	cout << "Если хотите вернуться в меню, нажмите ПРОБЕЛ";
+	code = _getch();
+	if (code == 32) { main(); }
+	else return 0;
+	
 }
